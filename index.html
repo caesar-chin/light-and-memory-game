@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hello!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>The Light and Sound Memory Game (In C Major Scale)</h1>
+
+    <p>
+      Repeat the pattern and win the game! The keys are in a C Major Scale (5th
+      Octave). You have three tries....
+    </p>
+    
+    <h2 id="strikes">
+      Strikes: 0
+    </h2>
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="endBtn" class="hidden" onclick="stopGame()">End</button>
+
+    <div id="gameButtonArea">
+      <button
+        onmousedown="startTone(1)"
+        onclick="guess(1)"
+        onmouseup="stopTone()"
+        id="button1"
+      ></button>
+      <button
+        onmousedown="startTone(2)"
+        onclick="guess(2)"
+        onmouseup="stopTone()"
+        id="button2"
+      ></button>
+      <button
+        onmousedown="startTone(3)"
+        onclick="guess(3)"
+        onmouseup="stopTone()"
+        id="button3"
+      ></button>
+      <button
+        onmousedown="startTone(4)"
+        onclick="guess(4)"
+        onmouseup="stopTone()"
+        id="button4"
+      ></button>
+      <button
+        onmousedown="startTone(5)"
+        onclick="guess(5)"
+        onmouseup="stopTone()"
+        id="button5"
+      ></button>
+      <button
+        onmousedown="startTone(6)"
+        onclick="guess(6)"
+        onmouseup="stopTone()"
+        id="button6"
+      ></button>
+      <button
+        onmousedown="startTone(7)"
+        onclick="guess(7)"
+        onmouseup="stopTone()"
+        id="button7"
+      ></button>
+      <button
+        onmousedown="startTone(8)"
+        onclick="guess(8)"
+        onmouseup="stopTone()"
+        id="button8"
+      ></button>
+    </div>
+  </body>
+</html>
